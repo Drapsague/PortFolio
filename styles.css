@@ -45,7 +45,6 @@ section{
     padding: 2rem;
 
 }
-
 #section1{
     padding-top: 3rem;
 }
@@ -63,8 +62,6 @@ a{
 .top-right-container{
     color : white;
 }
-
-
 .right-main-container{
     padding: 2rem;
     top: 5rem;
@@ -77,8 +74,6 @@ a{
     margin-right: 10rem;
  
 }
-
-
 
 .right-container h1{
     font-size: 3.4rem;
@@ -126,10 +121,6 @@ a{
 .menu:hover{
     margin-left: 1.2rem;
 }
-
-
-
-
 .link-social-media{
     display: flex;
     color: white;
@@ -163,7 +154,6 @@ a{
     margin-bottom: 3rem;
     font-size: 2rem;
 }
-
 
 .main-text{
     font-size: 1.4rem;
