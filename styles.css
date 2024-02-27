@@ -147,7 +147,7 @@ a{
 .right-footer p {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 
     Helvetica Neue, Arial, sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: #e0f2fe;
 }
 .meny{
@@ -371,6 +371,11 @@ input:checked + label .icon-card{
     pointer-events: none;
 }
 
+footer{
+    display: none;
+}
+
+
 /* Media Query Zone */
 
 
@@ -460,6 +465,15 @@ input:checked + label .icon-card{
 /* BREAK POIN*/
 
 @media (max-width : 1150px) {
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 3rem;
+    }
+    footer p{
+        word-wrap:break-word;
+        color: white;
+    }
     .project{
         background: rgba(2,132,199,0.05); 
     }
@@ -915,11 +929,14 @@ input:checked + label .icon-card{
     .right-container h1{
         font-size: 2.5rem;
     }
+    footer p{
+        font-size: 0.8rem;
+    }
 }
 
 
 @media (max-width : 430px){
- 
+   
     .about-class{
         font-size: 1.25rem;
     }
@@ -988,6 +1005,9 @@ input:checked + label .icon-card{
 
 
 @media (max-width : 375px){
+    footer p{
+        font-size: 0.6rem;
+    }
     .main-text{
         font-size: 0.9rem;
         margin-bottom: 0;
@@ -1080,6 +1100,9 @@ input:checked + label .icon-card{
 }
 
 @media (max-width : 320px){
+    footer p{
+        font-size: 0.55rem;
+    }
     input:checked + label{
         height: 30vh;
     }
