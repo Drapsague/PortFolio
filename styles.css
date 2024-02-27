@@ -221,8 +221,6 @@ input:checked + label .exp-main{
 input:checked + label .icon-card{
     opacity: 0;
 }
-
-
 .description > .icon-card{
     position: absolute;
     left: 45%;
@@ -724,6 +722,9 @@ input:checked + label .icon-card{
 /*SmartPhone Zone*/
 
 @media (max-width : 430px){
+    .description > .icon-card{
+        display: none;
+    }
     .main-text{
         font-size: 1rem;
         margin-bottom: 0;
