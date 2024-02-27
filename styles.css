@@ -32,6 +32,13 @@ html {
     background: radial-gradient(ellipse at bottom, #075985 30%, #082f49 100%);
 }
 
+
+
+
+.top-link-social-media{
+    display: none;
+}
+
 .body-container{
     padding: 0 15rem 0 15rem;
     display: flex;
@@ -89,7 +96,7 @@ a{
 
 .right-container p{
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: #e0f2fe;
     font-weight: 400;
 }
 
@@ -157,7 +164,7 @@ a{
 
 .main-text{
     font-size: 1.4rem;
-    color : #94a3b8;
+    color : #e0f2fe;
     font-weight: 300;
     -moz-hyphens:auto;
     -ms-hyphens:auto;
@@ -267,7 +274,7 @@ input:checked + label .icon-card{
 .exp-main p{
     padding-top: 1rem;
     font-size: .9rem;
-    color : #94a3b8;
+    color : #e0f2fe;
     font-weight: 300;
     -moz-hyphens:auto;
     -ms-hyphens:auto;
@@ -337,7 +344,7 @@ input:checked + label .icon-card{
 .small-description{
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    color: #94a3b8;
+    color: #e0f2fe;
 }
 #chevrons-down{
     height: 1rem;
@@ -356,8 +363,15 @@ input:checked + label .icon-card{
     opacity: 1;
 }
 
+.inner_project h1 box-icon{
+    opacity: 0;
+}
 
-
+.inner-link{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
 
 /* Media Query Zone */
 
@@ -441,7 +455,121 @@ input:checked + label .icon-card{
     }
 
 }
+
+
+
+
+/* BREAK POIN*/
+
 @media (max-width : 1150px) {
+    .project-a{
+        pointer-events: none;
+    }
+    .inner-link{
+        pointer-events: all;
+    }
+
+    .project-h1:hover #chevrons-down2{
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+    .project #chevrons-down2{
+        transition: all .2s ease;
+        opacity: 0;
+        height: 1rem;
+        width: 1rem;
+        margin-left: .5rem;
+    }
+
+    .project:hover #chevrons-down{
+        display: none;
+        opacity: 0;
+    }
+    .project #chevrons-down{
+        display: none;
+        opacity: 0;
+    }
+    .right-container p {
+        font-weight: 500;
+    }
+    .main-text{
+        font-weight: 500;
+    }
+
+    .card{
+        background-size: cover;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255, 0.05);
+        width: 100%;
+        height: 25vh;
+        border-radius: 1rem;
+        margin: .8em 0 .8rem 0;
+        padding: 1.5rem;
+        /*box-shadow: -8px 17px 30px -5px rgba(30, 41, 59, 0.5);*/
+        box-shadow: -8px 8px 15px -5px rgba(30, 41, 59, 0.2);
+        backdrop-filter: blur(5px);
+        overflow: hidden;    
+    }
+    .card:hover{
+        background-color: none;
+    }
+    input{
+        display: none;
+    }
+    input:checked  {
+        display: none;
+    }
+    .description > .icon-card{
+        display: none;
+    }
+    .exp > .description{
+       display: flex;
+       overflow: hidden;
+       width: 100%;
+       gap: 1rem;
+    }
+    .exp-main{
+        overflow: hidden;
+        transform: translateX(0);
+        width: 70%;
+    }
+    .exp-date{
+        padding-top: 1rem;
+        font-size: .8rem;
+        width: 30%;
+        font-weight: 700;
+        line-height: 1.2rem;
+       
+    } 
+    .exp-main h1{
+        font-size: 1.2rem;
+    }
+    .exp-main p{
+       
+        font-weight: 500;
+       
+    
+    }
+    
+    .skills{
+        display: flex;
+        gap: .5rem;
+        
+    }
+
+    .top-link-social-media{
+        display: flex;
+        color: white;
+
+    }
+    .top-social-link{
+        margin: 0 1rem 1rem 0;
+        height: 2rem;
+        width: 2rem;
+        margin-top: 1rem;
+    }
+ 
+
     .body-container{
         display: flex;
         flex-direction: column;
@@ -495,7 +623,7 @@ input:checked + label .icon-card{
 
 
 
-@media (max-width : 585px){
+@media (max-width : 593px){
     .body-container{
         margin: 0;
     }
@@ -543,6 +671,7 @@ input:checked + label .icon-card{
         top: 2rem ;
      
     }
+
     section{
         scroll-margin-top: 1.6rem;
     
@@ -554,12 +683,19 @@ input:checked + label .icon-card{
 }
 
 
+
 @media (max-width : 1024px) and (max-height : 600px){
     .card {
-        height: 18vh;
+        height: 28vh;
+    }
+    input:checked {
+        display: none;
     }
     input:checked + label{
         height: 28vh;
+    }
+    input{
+        display: none;
     }
     .project{
         height: 22vh;
@@ -571,28 +707,36 @@ input:checked + label .icon-card{
 }
 
 
-@media (max-width : 860px) and (max-height : 1280px){
+
+
+
+@media (max-width : 859px) and (max-height : 959px){
     .exp-main p{
-        font-size: 1.2rem;
+        font-size: 0.85rem;
     }
     .exp-main h1{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .exp-date p{
-        font-size: 1.15rem;
+        font-size: 0.7rem;
         line-height: 1.8rem;
     }
     .project h1{
-        font-size: 1.65rem;
+        font-size: 1.2rem;
     }
     .language{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     .small-description{
-        font-size: 1rem;
+        font-size: .85rem;
     }
+    .exp-date{
+        width: 25%;
+    }
+    
+
 }
 
 @media (max-width  : 770px) and (max-height  : 875px){
@@ -680,7 +824,8 @@ input:checked + label .icon-card{
 
 }
 
-@media (width = 540px) and (height = 720px) {
+@media (max-width : 540px) and (max-height : 720px) {
+  
     .main-text{
         font-size: 1rem;
         margin-bottom: 0;
@@ -717,11 +862,58 @@ input:checked + label .icon-card{
 }
 
 
+@media (max-height : 1280px) and (min-height : 1280px){
+    .main-text{
+        font-size: 1.4rem;
+    }
+    .right-container p{
+        font-size: 1.15rem;
+    }
+    .exp-main p{
+        font-size: 1.3rem;
+    }
+    .exp-main h1{
+        font-size: 1.9rem;
+    }
+    .exp-date p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .project h1{
+        font-size: 1.75rem;
+    }
+    .language{
+        font-size: 1.35rem;
+    }
+    
+    .small-description{
+        font-size: 1.2rem;
+    }
+    .exp-main .skills p{
+        scale: 1.4;
+    }
+    .skills{
+        margin-top: .5rem;
+        gap: 1rem;
+    }
+    .project:hover{
+        scale: 1.075;
+    }
+}
+
 
 
 /*SmartPhone Zone*/
 
 @media (max-width : 430px){
+
+    .project #chevrons-down2{
+        transition: all .2s ease;
+        opacity: 0;
+        height: 1rem;
+        width: 1rem;
+        margin-left: .5rem;
+    }
     .description > .icon-card{
         display: none;
     }
@@ -899,6 +1091,9 @@ input:checked + label .icon-card{
     }
 
     input:checked + label{
+        height: 32vh;
+    }
+    .card{
         height: 32vh;
     }
     #chevrons-down{
