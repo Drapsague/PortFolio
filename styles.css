@@ -351,6 +351,7 @@ input:checked + label .icon-card{
     width: 1rem;
     transition: transform 0.8s ease;
     opacity: 0;
+    margin-left: 1rem;
 }
 .top-cont{
     display: flex;
