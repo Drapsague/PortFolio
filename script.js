@@ -3,19 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectItems = document.querySelectorAll('.project');
     const gif_arrow = document.querySelectorAll('.exp')
     projectItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            projectItems.forEach(item => {
-                if (item !== this) {
-                    item.style.opacity = '0.4';
-                }
+        if (window.innerWidth > 430){
+            item.addEventListener('mouseenter', function() {
+                projectItems.forEach(item => {
+                    if (item !== this) {
+                        item.style.opacity = '0.4';
+                    }
+                });
             });
-        });
-
-        item.addEventListener('mouseleave', function() {
-            projectItems.forEach(item => {
-                item.style.opacity = '1';
+    
+            item.addEventListener('mouseleave', function() {
+                projectItems.forEach(item => {
+                    item.style.opacity = '1';
+                });
             });
-        });
+        }
     });
 });
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
