@@ -931,7 +931,9 @@ footer{
 
 
 @media (max-width : 430px){
-   
+    .project{
+        height: 19vh;
+    }
     .about-class{
         font-size: 1.25rem;
     }
