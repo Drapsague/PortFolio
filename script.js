@@ -53,10 +53,9 @@ document.querySelectorAll('.menu').forEach(menuItem => {
 });
 
 
-
+/*
 
 function updateMenuOnScroll() {
-    const section2 = document.querySelector('#section2');
     const sections = document.querySelectorAll('section');
     let closestSectionId = null;
     let closestSectionDistance = Infinity;
@@ -92,3 +91,45 @@ function updateMenuOnScroll() {
 
 window.addEventListener('scroll', updateMenuOnScroll);
 updateMenuOnScroll(); 
+*/
+
+
+function updateMenuOnScroll() {
+    const sections = document.querySelectorAll('section');
+    let closestSectionId = null;
+    let maxVisibleArea = 0; 
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+
+      
+        if (visibleHeight > maxVisibleArea) {
+            maxVisibleArea = visibleHeight;
+            closestSectionId = section.id;
+        }
+    });
+
+   
+    document.querySelectorAll('.bottom_side-container a').forEach(link => {
+        const menuItemP = link.querySelector('.menu');
+        const boxIcon = link.querySelector('box-icon');
+        
+        if (menuItemP.dataset.section === `#${closestSectionId}`) {
+            menuItemP.style.color = 'white'; 
+            if (boxIcon) { 
+                boxIcon.setAttribute('type', 'solid');
+                boxIcon.setAttribute('color', 'white');
+            }
+        } else {
+            menuItemP.style.color = "#94a3b8"; 
+            if (boxIcon) { 
+                boxIcon.setAttribute('type', 'regular'); 
+                boxIcon.setAttribute('color', '#94a3b8');
+            }
+        }
+    });
+}
+
+window.addEventListener('scroll', updateMenuOnScroll);
+updateMenuOnScroll();

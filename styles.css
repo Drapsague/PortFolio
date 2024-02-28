@@ -286,10 +286,6 @@ input:checked + label .icon-card{
     gap: .5rem;
     
 }
-#section3{
-    height: 100vh;
-}
-
 .main-projects-container{
     display: flex;
     flex-direction: column;
@@ -365,14 +361,12 @@ input:checked + label .icon-card{
     opacity: 0;
 }
 
-.inner-link{
-    display: flex;
-    align-items: center;
-    pointer-events: none;
-}
-
 footer{
     display: none;
+}
+.inner-link{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -487,6 +481,7 @@ footer{
     .inner-link{
         pointer-events: all;
     }
+    
 
     .project-h1:hover #chevrons-down2{
         transform: rotate(180deg);
