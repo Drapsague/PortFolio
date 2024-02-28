@@ -669,13 +669,20 @@ footer{
 @media (max-height : 880px){
     .exp-date{
         padding-top: 0;
+        font-size: 0.7rem  ;
     }
 
     .small-description{
-        font-size: 0.65rem;
+        font-size: 0.68rem;
     }
     section{
         margin-top: 0;
+    }
+    .exp-main p{
+        font-size: .75rem;
+    }
+    .skills box-icon{
+        scale: 0.8;
     }
 
 }
