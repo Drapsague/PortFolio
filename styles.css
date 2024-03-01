@@ -373,6 +373,62 @@ footer{
 /* Media Query Zone */
 
 
+@media only screen and (min-width : 2500px){
+    .card{
+        height: 18vh;
+    }
+    .exp-date{
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
+
+    .exp-main h1{
+        font-size: 1.4rem;
+    }
+
+    .exp-main p{
+        padding-top: 1rem;
+        font-size: 1.15rem;
+    }
+    .small-description{
+        font-size: 0.75rem;
+    }
+    .main-text{
+        font-size: 1.7rem;
+    }
+    .right-container p{
+        font-size: 1.2rem;
+    }
+    .right-container h1{
+        font-size: 3.6rem;
+    }
+
+    .menu{
+        font-size: 1.5rem;
+    }
+    .bbox{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .skills{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .skills box-icon{
+        scale: 1.2;
+    }
+    .small-description{
+        font-size: 1rem;
+    }
+    .language{
+        font-size: 1.2rem;
+    }
+    .project h1{
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width :1700px){
     .body-container{
         padding: 0 5rem 0 5rem;
@@ -733,8 +789,6 @@ footer{
 
 
 }
-
-
 @media (max-height : 880px){
     .exp-date{
         padding-top: 0;
@@ -766,7 +820,7 @@ footer{
         top: 1rem;
     }
     section{
-        margin-top: 1rem;
+        margin-top: 0;
         scroll-margin-top: 1rem;
     }
     .exp-date{
@@ -836,12 +890,8 @@ footer{
     .main-text{
         font-size: 1.1rem;
     }
-    .right-main-container{
-        height: 90%;
-    }
 }
-
-@media (max-height : 555px){
+@media only screen and (max-height : 555px){
     .right-container h1{
         font-size: 2.3rem;
     }
@@ -861,10 +911,55 @@ footer{
     .main-text{
         font-size: 1.1rem;
     }
-    .top-right-container{
-        height: 80%;
+}
+@media only screen and (max-height : 540px){
+    .right-container h1{
+        font-size: 2.1rem;
+    }
+    .right-container h2{
+        font-size: 1.1rem;
+    }
+    .right-container p{
+        font-size: 0.8rem;
+    }
+    .menu{
+        font-size: 0.7rem;
+    }
+    .bbox{
+        height: 0.6rem;
+        width: 0.6rem;
+    }
+    .main-text{
+        font-size: 0.9rem;
+    }
+    .social-link{
+        scale: 0.8;
+    }
+    .right-footer p{
+        font-size: 0.5rem;
+    }
+    .exp-date{
+        font-size: 0.5rem;
+        line-height: .85rem;
+    }
+    .exp-main p{
+        font-size: 0.65em;
+        padding-top: 0.45rem;
+    }
+    .exp-main h1{
+        font-size: 0.85rem;
+    }
+    .project{
+        height: 20vh;
+    }
+    .card{
+        height: 17vh;
+    }
+    input:checked + label{
+        height: 28vh;
     }
 }
+
 
 
 
@@ -915,10 +1010,10 @@ footer{
 
 @media (max-width : 859px) and (max-height : 959px){
     .exp-main p{
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
     .exp-main h1{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .exp-date p{
@@ -938,11 +1033,16 @@ footer{
     .exp-date{
         width: 25%;
     }
+    .skills box-icon{
+       scale: 0.8;
+    }
     
 
 }
 
-@media (max-width  : 770px) and (max-height  : 875px){
+
+
+@media only screen and (max-width  : 770px) and (max-height  : 875px){
     .exp-main p{
         font-size: .85rem;
     }
@@ -965,6 +1065,63 @@ footer{
         font-size: .8rem;
     }
 }
+@media only screen and (max-width  : 770px) and (max-height  : 875px){
+    .exp-main p{
+        font-size: .85rem;
+    }
+    .exp-main h1{
+        font-size: 1.4rem;
+    }
+
+    .exp-date p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .project h1{
+        font-size: 1.45rem;
+    }
+    .language{
+        font-size: 1.10rem;
+    }
+    
+    .small-description{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width : 620px) and (max-height : 875px){
+    .exp-main p{
+        font-size: 0.75rem;
+    }
+    .exp-main h1{
+        font-size: 1.2rem;
+    }
+
+    .exp-date p{
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+    }
+    .project h1{
+        font-size: 1.2rem;
+    }
+    .language{
+        font-size: 1rem;
+    }
+    
+    .small-description{
+        font-size: .75rem;
+    }
+    .exp-date{
+        width: 25%;
+    }
+    .skills box-icon{
+       scale: 0.8;
+    }   
+    .main-text{
+        font-size: 1.15rem;
+    }
+}
+
 
 @media (width = 768px) and (height = 1024px){
     .main-text{
