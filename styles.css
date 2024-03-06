@@ -912,6 +912,8 @@ footer{
         font-size: 1.1rem;
     }
 }
+
+
 @media only screen and (max-height : 540px){
     .right-container h1{
         font-size: 2.1rem;
@@ -959,7 +961,6 @@ footer{
         height: 28vh;
     }
 }
-
 
 
 
@@ -1345,6 +1346,23 @@ footer{
 
 }
 
+@media only screen and (max-height : 670px) and (max-width : 400px){
+    .card {
+        height: 29vh;
+    }
+    input:checked {
+        display: none;
+    }
+    input:checked + label{
+        height: 29vh;
+    }
+    input{
+        display: none;
+    }
+    .project{
+        height: 24vh;
+    }
+}
 
 @media (max-width : 375px){
     footer p{
